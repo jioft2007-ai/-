@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Админ-панель</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+  <h1>Админ-панель</h1>
+
+  <h2>Добавить товар</h2>
+  <input id="newName" placeholder="Название">
+  <input id="newPrice" type="number" placeholder="Цена">
+  <button onclick="addProduct()">Добавить</button>
+
+  <h2>Список товаров</h2>
+  <ul id="productList"></ul>
+
+  <script src="admin.js"></script>
+</body>
+</html>
